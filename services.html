@@ -1,4 +1,45 @@
-<?php include 'includes/header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ROADCAST | Podcast • Music • Events • Entertainment • Media</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">THE ROADCAST</a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="promotion.html">Paid Promotion</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Start -->
+    <main class="main-content">
 
 <!-- Page Header -->
 <section class="page-header" style="background: url('assets/images/services-bg.jpg') center/cover no-repeat;">
@@ -94,7 +135,7 @@
         </div>
 
         <div class="text-center mt-5" style="margin-top: 50px;">
-            <a href="contact.php" class="btn btn-primary">Book a Service</a>
+            <a href="contact.html" class="btn btn-primary">Book a Service</a>
         </div>
     </div>
 </section>
@@ -112,9 +153,48 @@
                 <span style="padding: 8px 15px; background: rgba(255,255,255,0.05); border-radius: 20px; font-size: 0.9rem;">Reels</span>
                 <span style="padding: 8px 15px; background: rgba(255,255,255,0.05); border-radius: 20px; font-size: 0.9rem;">Live Shoot</span>
             </div>
-            <a href="contact.php?service=livelocation" class="btn btn-outline">Contact for On-Location Shoot</a>
+            <a href="contact.html?service=livelocation" class="btn btn-outline">Contact for On-Location Shoot</a>
         </div>
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>THE ROADCAST</h3>
+                <p>Discover • Create • Perform • Promote • Connect</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="events.html">Explore Events</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="promotion.html">Promote Your Business</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> theroadcastt@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sikar, Rajasthan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 THE ROADCAST. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
