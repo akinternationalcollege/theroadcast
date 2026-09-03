@@ -14,8 +14,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Dynamic Announcement Bar -->
+    <div id="announcement-bar" style="background: var(--accent-color); color: #fff; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 600; display: none; position: relative; z-index: 1001;">
+        <span id="announcement-text"></span>
+    </div>
+
     <!-- Header / Navigation -->
-    <header class="header">
+    <header class="header" id="main-header">
         <div class="container header-container">
             <a href="index.html" class="logo">THE ROADCAST</a>
 
@@ -41,16 +46,31 @@
     <!-- Main Content Start -->
     <main class="main-content">
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-        <h1 class="hero-title">Welcome to <span class="text-accent">THE ROADCAST</span></h1>
-        <p class="hero-tagline">Podcast • Music • Events • Entertainment • Media</p>
-        <p class="hero-desc">Experience the best in local entertainment, professional media services, and event management.</p>
-        <div class="hero-buttons">
-            <a href="events.html" class="btn btn-primary">Explore Events</a>
-            <a href="contact.html" class="btn btn-outline">Book Now</a>
+<!-- Hero Section (Enhanced) -->
+<section class="hero" style="background: linear-gradient(to bottom, rgba(15, 15, 17, 0.4), rgba(15, 15, 17, 1)), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop') center/cover fixed no-repeat;">
+    <div class="particles" style="position: absolute; top:0; left:0; width:100%; height:100%; background-image: radial-gradient(#ff3b30 1px, transparent 1px); background-size: 50px 50px; opacity: 0.1;"></div>
+
+    <div class="container hero-content" style="padding-top: 50px;">
+        <div class="hero-badge" style="display:inline-block; padding: 8px 16px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 30px; margin-bottom: 25px; backdrop-filter: blur(5px); font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase;">
+            <i class="fas fa-bolt text-accent" style="margin-right: 8px;"></i> Premier Entertainment Hub
+        </div>
+
+        <h1 class="hero-title" style="font-size: 5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.8); margin-bottom: 20px;">
+            Enter The <br><span class="text-accent" style="position:relative;">ROADCAST</span>
+        </h1>
+
+        <p class="hero-tagline" style="font-size: 1.4rem; color: #fff; text-shadow: 0 4px 10px rgba(0,0,0,0.8); max-width: 700px; margin: 0 auto 40px auto; line-height: 1.8;">
+            Elevating local talent through cinematic podcasts, electrifying open mics, and premium media production.
+        </p>
+
+        <div class="hero-buttons" id="dynamic-hero-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <!-- Fallback buttons -->
+            <a href="events.html" class="btn btn-primary" style="padding: 15px 35px; font-size: 1rem; border-radius: 30px; box-shadow: 0 10px 20px rgba(255,59,48,0.3);">Explore Events</a>
+            <a href="contact.html" class="btn btn-outline" style="padding: 15px 35px; font-size: 1rem; border-radius: 30px; backdrop-filter: blur(5px);">Book Now</a>
+        </div>
+
+        <div class="hero-stats" id="dynamic-stats" style="display: flex; justify-content: center; gap: 50px; margin-top: 60px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <div style="text-align: center;"><h4 style="font-size: 2rem; color: var(--accent-color); margin-bottom: 5px;">50+</h4><p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #a0a0a0;">Events</p></div>
         </div>
     </div>
 </section>
@@ -109,6 +129,25 @@
     </div>
 </section>
 
+<!-- Embedded Video Banner -->
+<section class="section-padding" style="background: #1a1a1d; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <h2 style="font-family: var(--font-heading); font-size: 2.5rem; margin-bottom: 20px;">Experience The <span class="text-accent">Vibe</span></h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 30px;">Catch the highlights from our latest Open Mic events and Jamming sessions. Feel the energy of local artists taking the stage.</p>
+            <a href="portfolio.html" class="btn btn-primary" style="border-radius: 30px;"><i class="fas fa-play-circle" style="margin-right: 8px;"></i> Watch Full Gallery</a>
+        </div>
+        <div style="flex: 1; min-width: 300px; position: relative;">
+            <div style="background: #000; border-radius: 12px; overflow: hidden; border: 2px solid var(--accent-color); box-shadow: 0 15px 40px rgba(255,59,48,0.2);">
+                <img src="https://images.unsplash.com/photo-1516280440502-2c63dfb45508?q=80&w=2070&auto=format&fit=crop" style="width: 100%; display: block; opacity: 0.8;" alt="Live Event">
+                <div style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">
+                    <a href="podcast.html" style="display: flex; align-items: center; justify-content: center; width: 70px; height: 70px; background: rgba(255,59,48,0.9); border-radius: 50%; color: #fff; font-size: 1.5rem; transition: transform 0.3s;"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
     <!-- Main Content End -->
 
@@ -138,6 +177,7 @@
                 <h4>Contact Info</h4>
                 <p><i class="fas fa-envelope"></i> theroadcastt@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Sikar, Rajasthan</p>
+                <a href="admin.html" style="color: #444; font-size: 12px; margin-top: 20px; display: inline-block;">Admin Tools</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -147,5 +187,55 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('data.json?v=' + new Date().getTime())
+                .then(res => res.json())
+                .then(data => {
+                    // 1. Update Announcement
+                    if(data.announcement && data.announcement.trim() !== "") {
+                        document.getElementById('announcement-text').innerText = data.announcement;
+                        document.getElementById('announcement-bar').style.display = 'block';
+                        document.getElementById('main-header').style.top = '40px';
+                    }
+
+                    // 2. Update Hero Buttons
+                    if(data.quick_links && data.quick_links.length > 0) {
+                        const btnContainer = document.getElementById('dynamic-hero-buttons');
+                        btnContainer.innerHTML = '';
+
+                        data.quick_links.forEach(link => {
+                            const a = document.createElement('a');
+                            a.href = link.url;
+                            a.className = link.style === 'primary' ? 'btn btn-primary' : 'btn btn-outline';
+                            a.style.padding = '15px 35px';
+                            a.style.fontSize = '1rem';
+                            a.style.borderRadius = '30px';
+                            if(link.style === 'primary') a.style.boxShadow = '0 10px 20px rgba(255,59,48,0.3)';
+                            if(link.style === 'outline') a.style.backdropFilter = 'blur(5px)';
+                            a.innerText = link.title;
+                            btnContainer.appendChild(a);
+                        });
+                    }
+
+                    // 3. Update Stats
+                    if(data.stats) {
+                        const statsContainer = document.getElementById('dynamic-stats');
+                        statsContainer.innerHTML = '';
+
+                        for (const ObjectEntry of Object.entries(data.stats)) {
+                            const key = ObjectEntry[0];
+                            const value = ObjectEntry[1];
+                            const statDiv = document.createElement('div');
+                            statDiv.style.textAlign = 'center';
+                            statDiv.innerHTML = '<h4 style="font-size: 2.2rem; color: var(--accent-color); margin-bottom: 5px; font-family: var(--font-heading);">' + value + '</h4><p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: #a0a0a0; font-weight: 600;">' + key + '</p>';
+                            statsContainer.appendChild(statDiv);
+                        }
+                    }
+                })
+                .catch(err => console.log('Using default static content.'));
+        });
+    </script>
 </body>
 </html>

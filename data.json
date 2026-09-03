@@ -1,0 +1,28 @@
+{
+  "announcement": "🔥 New Podcast Episode Out Now! Stream on YouTube & Spotify.",
+  "quick_links": [
+    {
+      "id": "1",
+      "title": "Register for Open Mic",
+      "url": "contact.html",
+      "style": "primary"
+    },
+    {
+      "id": "2",
+      "title": "Watch Latest Podcast",
+      "url": "podcast.html",
+      "style": "outline"
+    },
+    {
+      "id": "3",
+      "title": "View Portfolio",
+      "url": "portfolio.html",
+      "style": "outline"
+    }
+  ],
+  "stats": {
+    "events": "50+",
+    "artists": "120+",
+    "podcasts": "25+"
+  }
+}
