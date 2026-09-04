@@ -1284,3 +1284,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 25px;
     }
 }
+.mobile-nav-active { display: flex !important; flex-direction: column; position: absolute; top: 80px; left: 0; width: 100%; background-color: var(--bg-dark); padding: 20px 0; border-bottom: 2px solid var(--accent-color); z-index: 999; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }

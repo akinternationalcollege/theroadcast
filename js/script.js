@@ -6,17 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileMenuBtn && navList) {
         mobileMenuBtn.addEventListener('click', () => {
             // Very basic toggle for now - will enhance later with CSS class
-            if (navList.style.display === 'flex') {
-                navList.style.display = 'none';
+            if (navList.classList.contains("mobile-nav-active")) {
+                navList.classList.remove("mobile-nav-active");
             } else {
-                navList.style.display = 'flex';
-                navList.style.flexDirection = 'column';
-                navList.style.position = 'absolute';
-                navList.style.top = '80px';
-                navList.style.left = '0';
-                navList.style.width = '100%';
-                navList.style.backgroundColor = 'rgba(15, 15, 17, 0.98)';
-                navList.style.padding = '20px 0';
+                navList.classList.add("mobile-nav-active");
             }
         });
     }
